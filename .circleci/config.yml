@@ -2,9 +2,11 @@ version: 2.1
 jobs:
    build:
      docker:
-       - image: 
+       - image: ubuntu
      steps:
        - checkout
        - run:
-          name: testing
+          name: "testing"
+          shell: /bin/sh
           command: echo "Welcome"
+            cd /tmp
