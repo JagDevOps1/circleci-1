@@ -1,9 +1,10 @@
 version: 2.1
- jobs:
+jobs:
    build:
      docker:
-       - image: centos
+       - image: 
      steps:
        - checkout
-       - run: echo "A first hello"
-       - run: echo "first config.yml"
+       - run:
+          name: testing
+          command: echo "Welcome"
